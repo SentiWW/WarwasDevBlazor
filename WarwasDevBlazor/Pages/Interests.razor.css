@@ -1,0 +1,45 @@
+﻿.interests {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: linear-gradient(180deg, #fdfd97, #9ee09e);
+    color: #212529;
+}
+
+    .interests > header {
+        width: 90vw;
+        text-align: center;
+        font-size: 8vmin;
+        font-weight: 900;
+        font-variant: small-caps;
+    }
+
+    .interests > article {
+        display: inline-block;
+        width: 90vw;
+        text-align: center;
+        font-size: 3vmin;
+        font-weight: 600;
+    }
+
+        .interests > article > ul {
+            margin: 0 auto;
+            width: 90vw;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .interests > article > ul > li {
+                display: inline-block;
+            }
+
+        .interests > article > p {
+            width: 40vw;
+            float: left;
+            text-align: justify;
+            margin-right: 2.5vw;
+            margin-left: 2.5vw;
+        }

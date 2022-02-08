@@ -1,0 +1,53 @@
+﻿.about {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: linear-gradient(180deg, #feb144, #fdfd97);
+    /*background: url("https://i.imgur.com/qU6XasD.jpg") no-repeat center center fixed;
+    background-size: cover;*/
+    color: #212529;
+}
+
+    .about > header {
+        width: 90vw;
+        text-align: center;
+        font-size: 8vmin;
+        font-weight: 900;
+        font-variant: small-caps;
+    }
+
+    .about > article {
+        display: inline-block;
+        width: 90vw;
+        text-align: center;
+        font-size: 3vmin;
+        font-weight: 600;
+    }
+
+        .about > article > img {
+            display: block;
+            max-height: 70vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about > article > p > a {
+            color: #af1c05;
+            text-decoration: none;
+        }    
+        
+            .about > article > p > a:hover {
+                text-decoration: none;
+            }
+
+            .about > article > p > a:active {
+                text-decoration: none;
+            }
+
+@media only screen and (max-width: 600px) {
+    .about > article > img {
+        max-height: 60vh;
+    }
+}

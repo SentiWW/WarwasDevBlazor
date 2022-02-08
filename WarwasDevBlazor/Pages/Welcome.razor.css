@@ -1,0 +1,83 @@
+﻿.welcome {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 25vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: linear-gradient(180deg, #ff6663, #feb144);
+    /*background: url("https://i.imgur.com/qU6XasD.jpg") no-repeat center center fixed;
+    background-size: cover;*/
+    color: #212529;
+}
+
+    .welcome > header {
+        width: 90vw;
+        text-align: center;
+        font-size: 12vmin;
+        font-weight: 900;
+        font-variant: small-caps;
+    }
+
+    .welcome > ul {
+        padding: 0;
+        margin: 0 0 3vmin 0;
+        text-align: center;
+        list-style: none;
+    }
+
+        .welcome > ul > li {
+            display: inline-block;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            width: fit-content;
+        }
+
+            .welcome > ul > li > a {
+                font-size: 5vmin;
+                color: inherit;
+            }
+
+                .welcome > ul > li > a:hover {
+                    color: #ffffff;
+                }
+
+    .welcome > small {
+        display: inline-block;
+        width: 90vw;
+        text-align: center;
+        font-size: 3vmin;
+        font-weight: 900;
+        font-variant: small-caps;
+    }
+
+.pulse {
+    animation-name: pulse;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+    @keyframes pulse {
+        0% {
+            opacity: 0.9;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        padding-top: 30vmin;
+    }
+
+        .welcome > small {
+            font-size: 5vmin;
+        }
+
+        .welcome > ul {
+            margin: 0 0 .5vmin 0;
+        }
+}

@@ -1,0 +1,17 @@
+﻿.projects {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: linear-gradient(180deg, #9ee09e, #9ec1cf);
+    color: #212529;
+}
+
+    .projects > header {
+        width: 90vw;
+        text-align: center;
+        font-size: 8vmin;
+        font-weight: 900;
+        font-variant: small-caps;
+    }
