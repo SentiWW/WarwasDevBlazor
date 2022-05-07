@@ -53,16 +53,18 @@
 .pulse {
     animation-name: pulse;
     animation-direction: alternate;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
     @keyframes pulse {
         0% {
             opacity: 0.9;
+            font-weight: 600;
         }
         100% {
             opacity: 1;
+            font-weight: 900
         }
     }
 

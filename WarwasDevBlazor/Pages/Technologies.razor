@@ -2,4 +2,40 @@
     <header>
         TECHNOLOGIES
     </header>
+    
+    <button class="btn btn-dark" @onclick="GetCurrentTime">@buttonText</button>
+
+    <article>
+        <p>
+
+        </p>
+    </article>
+
+    <p>
+        @currentTime
+    </p>
 </div>
+
+@code {
+    string buttonText = "Start";
+    string currentTime = string.Empty;
+    bool started = false;
+    async void GetCurrentTime()
+    {
+        started = !started;
+
+        buttonText = "Start";
+
+        if (started)
+            buttonText = "Pause";
+
+        await Task.Run(async () => {
+            while (started)
+            {
+                currentTime = DateTime.Now.ToString();
+                StateHasChanged();
+                await Task.Delay(1000);
+            }
+        });
+    }
+}
