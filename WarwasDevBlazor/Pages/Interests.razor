@@ -6,39 +6,94 @@
     <article>
         <ul>
             <li>
-                Board games,
+                <button class="btn btn-dark" @onclick="GetBoardGamesMessage">
+                    Board games
+                </button>
             </li>
             <li>
-                Video games,
+                <button class="btn btn-dark" @onclick="GetVideoGamesMessage">
+                    Video games
+                </button>
             </li>
             <li>
-                Bass guitars,
+                <button class="btn btn-dark" @onclick="GetBassGuitarMessage">
+                    Bass guitar
+                </button>
             </li>
             <li>
-                Hiking,
+                <button class="btn btn-dark" @onclick="GetHikingMessage">
+                    Hiking
+                </button>
             </li>
             <li>
-                Cycling,
+                <button class="btn btn-dark" @onclick="GetCyclingMessage">
+                    Cycling
+                </button>
             </li>
             <li>
-                Cooking,
+                <button class="btn btn-dark" @onclick="GetCookingMessage">
+                    Cooking
+                </button>
             </li>
             <li>
-                Programming,
+                <button class="btn btn-dark" @onclick="GetProgrammingMessage">
+                    Programming
+                </button>
             </li>
             <li>
-                Software engineering
+                <button class="btn btn-dark" @onclick="GetSoftwareEngineeringMessage">
+                    Software engineering
+                </button>
             </li>
         </ul>
         <br />
         <p>
-            I love doing many different things, I also like trying new things even if they seem scary at first.
-            It's pretty obvious I like programming and software/web development considering this is a portfolio dedicated to showing off those skills.
-            I love to learn new things, anything from learning how to use some framework to learning how to fix air conditioning in my car.
-        </p>
-        <br class="mobile"/>
-        <p>
-            Some other text, placeholder for now.
+            @((MarkupString)Message)
         </p>
     </article>
 </div>
+
+@code {
+    private string Message { get; set; } = "Click on any of my hobbies to find out more about them";
+
+    private void GetBoardGamesMessage()
+    {
+        // <button class='btn btn-dark' onclick='alert(\"TEST\")'>X</button>
+        Message = "Message 1";
+    }
+
+    private void GetVideoGamesMessage()
+    {
+        Message = "Message 2";
+    }
+
+    private void GetBassGuitarMessage()
+    {
+        Message = "Message 3";
+    }
+
+    private void GetHikingMessage()
+    {
+        Message = "Message 4";
+    }
+    
+    private void GetCyclingMessage()
+    {
+        Message = "Message 5";
+    }
+    
+    private void GetCookingMessage()
+    {
+        Message = "Message 6";
+    }
+
+    private void GetProgrammingMessage()
+    {
+        Message = "Message 7";
+    }
+    
+    private void GetSoftwareEngineeringMessage()
+    {
+        Message = "Message 8";
+    }
+}
