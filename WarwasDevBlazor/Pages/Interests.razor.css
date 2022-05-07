@@ -37,8 +37,6 @@
             }
 
         .interests > article > p {
-            width: 40vw;
-            float: left;
             text-align: justify;
             margin-right: 2.5vw;
             margin-left: 2.5vw;
